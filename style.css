@@ -282,7 +282,7 @@ nav i {
     border-radius: 0px;
 }
 
-.feature-image{
+.feature-image {
     width: 100%;
 }
 
@@ -354,6 +354,10 @@ nav i {
         text-align: center;
     }
 
+    .feature-sub-title {
+        width: 100%;
+    }
+
 
 
 
@@ -408,6 +412,10 @@ nav i {
         flex-direction: column;
         align-items: center;
         text-align: center;
+    }
+
+    .feature-sub-title {
+        width: 100%;
     }
 
 
