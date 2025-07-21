@@ -1,4 +1,4 @@
-*{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -25,26 +25,54 @@
     font-style: normal;
 }
 
+.roboto-font {
+    font-family: "Roboto", sans-serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+    font-variation-settings:
+        "wdth" 100;
+}
+
 /* common css */
 
-.dark01{
+.dark01 {
     color: #3A3A3A;
 }
 
-.btn{
+.dark02 {
+    color: rgba(0, 0, 0, 0.87);
+}
+
+.gray01 {
+    color: rgba(24, 25, 31, 1);
+}
+
+.gray02 {
+    color: rgba(120, 120, 133, 1);
+}
+
+.gray03 {
+    color: rgba(94, 99, 102, 1);
+}
+
+.gold {
+    color: gold;
+}
+
+.btn {
     display: flex;
     align-items: center;
     gap: 10px;
     color: white;
-    background:#E02C6D;
+    background: #E02C6D;
     border-radius: 41px;
     font-size: 1rem;
     font-weight: 700;
-    padding:10px 24px;
+    padding: 10px 24px;
     border: none;
 }
 
-.btn i{
+.btn i {
     font-size: 1.25rem;
 }
 
@@ -53,33 +81,33 @@
 
 
 /* header */
-header{
+header {
     width: 85%;
     margin: 6.25rem auto;
 
 }
 
 
-nav{
+nav {
     display: flex;
     justify-content: space-between;
     align-items: center;
 }
 
-.main-logo{
+.main-logo {
     font-size: 1.5rem;
     font-weight: 700;
 }
 
 
-.nav-menus{
+.nav-menus {
     list-style: none;
     display: flex;
     gap: 30px;
-    
+
 }
 
-.nav-link{
+.nav-link {
     font-size: 1rem;
     font-weight: 600;
     text-decoration: none;
@@ -92,48 +120,49 @@ nav i {
 
 /* banner */
 
-.banner{
+.banner {
     display: flex;
     align-items: center;
     word-wrap: break-word;
     justify-content: space-between;
-    margin:70px 0;
+    margin: 70px 0;
     gap: 70px;
 }
 
-.banner-left{
+.banner-left {
     width: 50%;
 }
 
-.banner-title{
+.banner-title {
     font-size: 3.25rem;
     font-weight: 700;
     line-height: 70px;
 }
 
-.banner-sub-title{
-    font-size:1rem;
+.banner-sub-title {
+    font-size: 1rem;
     font-weight: 600;
     margin: 16px 0;
     width: 80%;
 
 }
-.banner-right{
+
+.banner-right {
     position: relative;
 
 }
 
-.circle{
+.circle {
     width: 100%;
 }
 
-.camera{
+.camera {
     position: absolute;
     z-index: 1;
     width: 100%;
 }
 
-.sponsers{
+.sponsers {
     display: flex;
     align-items: center;
     justify-content: space-evenly;
@@ -145,22 +174,94 @@ nav i {
 
 
 
+/* products */
+.collection-area{
+    width: 66%;
+    margin: auto;
+}
+
+.collection-title{
+    font-size: 1.75rem;
+    text-align: center;
+    font-weight: 600;
+    margin: 50px 0;
+}
+.products{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    gap: 30px;
+}
+.product {
+    padding: 15px;
+    box-shadow: 0 0 40px 0 rgba(0, 0, 0, 0.15);
+    height: auto;
+    width: 329px;
+    border-radius: 5px;
+
+
+}
+
+.product-name {
+    font-size: 1.75rem;
+    font-weight: 500;
+    line-height: 40px;
+    margin: 10px 0;
+}
+
+.product-price {
+    font-size: 1.5rem;
+    font-weight: 400;
+    line-height: 150%;
+
+}
+
+.product-rating{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin: 10px 0;
+}
+
+.star-rating{
+    font-size: 0.7rem;
+}
+
+.point-rating {
+    font-size: 0.875rem;
+    font-weight: 700;
+}
+
+.facility {
+    font-size: .875rem;
+    font-weight: 700;
+    line-height: 143%;
+
+}
+.see-more-btn{
+    background: none ;
+    color: #E02C6D;
+    float: right;
+    padding: 0;
+    margin: 50px 0;
+    gap: 5px;
+}
 
 /* rsponsive */
 
-@media screen and  (width <= 576px){
-    .header
-
-    nav{
+@media screen and (width <=576px) {
+    .header nav {
         flex-direction: column;
     }
-    .nav-menus{
+
+    .nav-menus {
         display: none;
     }
-    .banner{
+
+    .banner {
         flex-direction: column-reverse;
     }
-    .banner-left{
+
+    .banner-left {
         width: 100%;
         display: flex;
         flex-direction: column;
@@ -168,7 +269,7 @@ nav i {
         text-align: center;
     }
 
-    .sponsers{
+    .sponsers {
         display: flex;
         justify-content: center;
         flex-wrap: wrap;
@@ -177,26 +278,28 @@ nav i {
         gap: 20px;
     }
 
-    .sponsers img{
+    .sponsers img {
         width: 50px;
     }
 
-    .banner-title{
+    .banner-title {
         font-size: 1.6rem;
         line-height: 40px;
     }
-    
 
 
-    
+
+
 }
 
-@media  screen and (576px <= width <= 992px) {
-    nav, .banner{
+@media screen and (576px <=width <=992px) {
+
+    nav,
+    .banner {
         flex-direction: column;
     }
 
-    .banner-left{
+    .banner-left {
         width: 100%;
         display: flex;
         flex-direction: column;
@@ -204,16 +307,16 @@ nav i {
         text-align: center;
     }
 
-    .main-logo{
+    .main-logo {
         margin-bottom: 20px;
     }
 
-    .sponsers{
+    .sponsers {
         flex-wrap: wrap;
         gap: 20px;
     }
 
-    .sponsers img{
+    .sponsers img {
         width: 60px;
     }
 }
