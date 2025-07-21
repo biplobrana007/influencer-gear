@@ -176,7 +176,7 @@ nav i {
 
 /* products */
 .collection-area{
-    width: 66%;
+    max-width: 66%;
     margin: auto;
 }
 
@@ -194,11 +194,14 @@ nav i {
 .product {
     padding: 15px;
     box-shadow: 0 0 40px 0 rgba(0, 0, 0, 0.15);
-    height: auto;
-    width: 329px;
+    width: auto;
     border-radius: 5px;
 
 
+}
+
+.product-image{
+    background-position: center center;
 }
 
 .product-name {
@@ -243,7 +246,7 @@ nav i {
     float: right;
     padding: 0;
     margin: 50px 0;
-    gap: 5px;
+    gap: 10x;
 }
 
 /* rsponsive */
@@ -286,6 +289,20 @@ nav i {
         font-size: 1.6rem;
         line-height: 40px;
     }
+    .products{
+        grid-template-columns:repeat(1, 1fr);
+        justify-content: center;
+    }
+
+    .collection-area{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .see-more-btn{
+        float: none;
+    }
 
 
 
@@ -319,4 +336,16 @@ nav i {
     .sponsers img {
         width: 60px;
     }
+
+    .collection-area{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .products{
+        grid-template-columns:repeat(2, 1fr);  
+        justify-content: center;      
+    }
+
+
 }
